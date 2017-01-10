@@ -5,6 +5,19 @@
 
 # Example : private IP address  ec2-instancename  count(no.of connections made to an RDS instance)
 
+#Usage:
+
+# ./RDSConnections.py -h
+#usage: ipcollection.py [-h] [-e HOST] [-d DATABASE] [-u USER] [-p PASSWORD]
+
+#optional arguments:
+#  -h, --help   show this help message and exit
+#  -e HOST      Give the RDS instance endpoint
+#  -d DATABASE  Give the database name
+#  -u USER      Give the user name
+#  -p PASSWORD  Give the password within single quotes
+
+
 import mysql.connector
 from mysql.connector import Error
 import argparse
